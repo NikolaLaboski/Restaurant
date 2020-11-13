@@ -1,0 +1,486 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #111111;
+    scroll-behavior: smooth;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+p{
+    font-weight: 300;
+    color: #111111;
+}
+
+
+.main{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.65) url("home22.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: overlay;
+}
+ 
+.main .content h2{
+    font-size: 2.6em;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    animation: move 3s infinite;
+}
+
+@keyframes move {
+    from { margin-left: 0px; }
+    to { margin-left: 100px; }
+  }
+
+.main span{
+    color: #ff0066;
+}
+
+.main .content{
+    text-align: center;
+}
+
+.main .content p{
+    margin: 1em 1em;
+    font-size: 2em;
+    color: #fff;
+}
+
+.btn{
+    font-size: 1em;
+    color: #fff;
+    background-color: #ff0066;
+    padding: 10px 30px;
+    margin-top: 20px;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    display: inline-block;
+}
+
+.btn:hover{
+    letter-spacing: 6px;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 10000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+}
+
+header .nav{
+    position: relative;
+    display: flex;
+}
+
+header .nav li{
+    list-style: none;
+    margin-left: 30px;
+}
+
+header .nav li a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.sticky{
+    background: #fff;
+    padding: 10px 100px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+.sticky .nav li a{
+    color: #111111;
+}
+
+.nav li a:hover{
+    color: #ff0066;
+}
+
+section{
+    padding: 100px;
+}
+
+.row{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.row .half{
+    position: relative;
+    width: 48%;
+}
+
+.title{
+    color: #111;
+    font-size: 2em;
+    font-weight: 400;
+}
+
+.title span{
+    color: #ff0066;
+    font-weight: 800;
+    font-size: 1.5em;
+}
+
+.row .half .imgA{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.row .half .imgA img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.title1{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+    font-weight: 800;
+    font-size: 1.5em;
+}
+
+.menu{
+    background-color: #ff0066;
+}
+
+.menu .content{
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.menu .content .box{
+    width: 340px;
+    margin: 20px;
+    border: 15px solid #fff;
+    box-shadow: 0 5px 35px rgba(0, 0, 0, 0.08);
+}
+
+.menu .content .box .imgA{
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+
+.menu .content .box .imgA img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.menu .content .box .text{
+    padding: 15px 0 5px;
+}
+
+.menu .content .box h3{
+    color: #fff;
+    text-align: center;
+}
+
+.btn1{
+    font-size: 1em;
+    color: #ff0066;
+    background-color: #fff;
+    padding: 10px 30px;
+    margin-top: 20px;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    display: inline-block;
+}
+
+.btn1:hover{
+    letter-spacing: 6px;
+}
+
+.blog .content{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 40px;
+}
+
+.blog .content .box{
+    width: 250px;
+    margin: 15px;
+}
+
+.blog .content .box .imgA{
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+
+.blog .content .box .imgA img{
+    position: absolute;
+    top: 0%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.blog .content .box .text{
+    padding: 15px 0 5px;
+}
+
+.blog .content .box .text h3{
+    font-weight: 400;
+    color: #111;
+    text-align: center;
+}
+
+.testimonials{
+    background: url(bg1.jpg);
+    background-size: cover;
+}
+
+.white .titleT,
+.white p{
+    color: #fff;
+}
+
+.testimonials .content{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 40px;
+}
+
+.testimonials .content .box{
+    width: 340px;
+    margin: 20px;
+    padding: 40px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.testimonials .content .box .imgA{
+    position: relative;
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.testimonials .content .box .imgA img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.testimonials .content .box .text{
+    text-align: center;
+}
+
+.testimonials .content .box .text h3{
+    color: #ff0066;
+}
+
+.contact{
+    background: rgba(0, 0, 0, 0.5) url(bg2.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-blend-mode: overlay;
+}
+
+.contact .title p{
+    color: #fff;
+}
+
+.contactForm{
+    padding: 75px 50px;
+    background: #fff;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin-top: 50px; 
+}
+
+.contactForm h3{
+    color: #111;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+.contactForm .inputBox{
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.contactForm .inputBox input,
+.contactForm .inputBox textarea{
+    width: 100%;
+    border: 1px solid #555;
+    padding: 10px;
+    color: #111;
+    outline: none;
+    font-size: 16px;
+    font-weight: 300;
+    resize: none;
+}
+
+.contactForm .inputBox input[type="submit"]{
+    font-size: 1em;
+    color: #fff;
+    background: #ff0157;
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    max-width: 100px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+}
+
+@media (max-width: 991px){
+    header,
+    header.sticky {
+        padding: 10px 20px;
+    }
+    header .nav{
+        display: none;
+    }
+
+    header .nav.active{
+        width: 100%;
+        height: calc(100% - 79px);
+        position: fixed;
+        top: 79px;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: #fff;
+    }
+
+    header .nav li{
+        margin-left: 0;
+    }
+
+    header .nav li a{
+        text-decoration: none;
+        color: #111;
+        font-size: 1.6em;
+        font-weight: 400;
+    }
+
+    .menuToggle{
+        position: relative;
+        width: 40px;
+        height: 40px;
+        background: url(menu.png);
+        background-size: 30px;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+    }
+
+    .menuToggle.active{
+        background: url(close.png);
+        background-size: 30px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    
+    section{
+        padding: 20px;
+    }
+
+    .main .content p{
+        font-size: 3em;
+        color: #fff;
+    }
+
+    .row{
+        flex-direction: column;
+    }
+
+    .row .half{
+        position: relative;
+        width: 100%;
+    }
+
+    .row .half .imgA{ 
+        height: 300px;
+        margin-top: 20px;
+    }
+    
+    .menu .content{
+        margin-top: 20px;
+    }
+
+    .menu .content .box{
+        margin: 10px;
+    }
+
+    .menu .content .box .imgA{
+        height: 260px;
+    }
+
+    .title1{
+        text-align: center;
+    }
+
+    .testimonials .content .box{
+        margin: 10px;
+        padding: 20px;
+    }
+
+    .contactForm{
+        padding: 35px 40px;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 480px){
+    .main .content p{
+        font-size: 2.2em;
+        color: #fff;
+    }
+}
